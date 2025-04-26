@@ -1,0 +1,276 @@
+body {
+    width: 100vw;
+    min-height: 100vh;
+    box-sizing: border-box;
+    background-color: black;
+    background-image: url(images/Restaurant\ \(40\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+/* -----------header section------------------------------------------------------- */
+header {
+    padding: 10px 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10vh;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+#reservation {
+    font-size: 1.2rem;
+    padding: 0.8rem;
+    min-width: 8em;
+    border: 2px solid black;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+
+#reservation a {
+    color: white;
+    text-decoration: none;
+}
+
+/* ----------------------main section-------------------------------------------*/
+.main {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.maintext {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#heading {
+    color: red;
+    font-size: 3rem;
+    line-height: 1;
+}
+
+#ind {
+    font-size: 4.5rem;
+    line-height: 1;
+    margin: 0.5rem 0;
+}
+
+#text {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+#login {
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 0.8rem 1.5rem;
+    min-width: 8em;
+    background-color: black;
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 2rem 0;
+    cursor: pointer;
+}
+
+#login a {
+    text-decoration: none;
+    color: white;
+}
+
+.mcontainer {
+    margin: 2rem auto;
+    padding-bottom: 2rem;
+    border-bottom: 10px solid black;
+    max-width: 90%;
+}
+
+/*---------------------- footer section (non-fixed) --------------------------- */
+footer {
+    border: 1px solid rgb(49, 49, 49);
+    display: flex;
+    padding: 1.5rem 5%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    width: 90%;
+    margin: 0 auto;
+}
+
+footer p {
+    color: white;
+    font-size: 1.2rem;
+}
+
+footer img {
+    max-width: 50px;
+}
+
+/* Media Queries for Responsive Design */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    header {
+        margin-top: 12vh;
+    }
+    
+    .main, .maintext {
+        width: 80%;
+    }
+    
+    #heading {
+        font-size: 3.5rem;
+    }
+    
+    #ind {
+        font-size: 5rem;
+    }
+    
+    #text {
+        font-size: 1.3rem;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    header {
+        margin-top: 15vh;
+        padding: 10px 8%;
+    }
+    
+    #heading {
+        font-size: 4rem;
+    }
+    
+    #ind {
+        font-size: 6rem;
+    }
+    
+    #text {
+        font-size: 1.4rem;
+    }
+    
+    .main, .maintext {
+        width: 70%;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    header {
+        padding: 10px 10%;
+    }
+    
+    .main {
+        width: 60%;
+        text-align: left;
+        margin-left: 5%;
+    }
+    
+    .maintext {
+        width: 50%;
+        text-align: left;
+        margin-left: 5%;
+        transform: translateX(0);
+    }
+    
+    #heading {
+        font-size: 5rem;
+    }
+    
+    #ind {
+        font-size: 7rem;
+    }
+    
+    #text {
+        font-size: 1.5rem;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    header {
+        padding: 10px 12%;
+    }
+    
+    #heading {
+        font-size: 6rem;
+    }
+    
+    #ind {
+        font-size: 8rem;
+    }
+    
+    #text {
+        font-size: 1.6rem;
+    }
+}
+
+/* Adjustments for very small screens (below 400px) */
+@media (max-width: 400px) {
+    header {
+        margin-top: 8vh;
+        padding: 10px 5%;
+    }
+    
+    #logo {
+        width: 60px;
+    }
+    
+    #heading {
+        font-size: 2.5rem;
+    }
+    
+    #ind {
+        font-size: 3.5rem;
+    }
+    
+    #text {
+        font-size: 1rem;
+    }
+    
+    #login, #reservation {
+        font-size: 1rem;
+        padding: 0.6rem;
+    }
+    
+    footer p {
+        font-size: 1rem;
+    }
+    
+    footer img {
+        max-width: 40px;
+    }
+}
+
+/* Portrait orientation adjustments */
+@media (orientation: portrait) and (max-width: 768px) {
+    body {
+        background-position: center 30%;
+    }
+    
+    .main, .maintext {
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    header {
+        margin-top: 5vh;
+    }
+}

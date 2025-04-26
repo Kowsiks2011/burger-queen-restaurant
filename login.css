@@ -1,0 +1,133 @@
+body {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #0e0e0e;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(images/Restaurant\ \(39\).png);
+    background-attachment: fixed;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    /* border: 2px solid red; */
+    display: grid;
+    grid-template-columns: 45% 50%;
+    align-items: center;
+    padding: 10px;
+    column-gap: 60px;
+    min-height: 120vh;
+}
+
+/* ----------left side------------------- */
+.leftside {
+    /* border: 2px solid rgb(5, 238, 71); */
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: last baseline;
+    justify-content: center;
+}
+
+#welcome {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+#title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: white;
+}
+
+/* ---------right side-------------------- */
+.rightside {
+    padding: 30px;
+    margin-right: 50px;
+    min-height: 100vh;
+    background-color: rgb(255, 255, 255, 0.2);
+}
+
+.rightbox {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    row-gap: 40px;
+    padding: 30px;
+
+}
+
+/* .top {
+    border: 2px solid red;
+} */
+
+#hello {
+    color: black;
+    font-size: 22px;
+    font-weight: 600;
+margin-left: 20px;
+}
+
+#gm {
+    color:  rgba(14, 115, 135, 0.944);
+    font-size: 22px;
+    font-weight: 600;
+    margin-left: 20px;
+}
+
+form {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+    font-size: 22px;
+    font-weight: 600;
+}
+form input{
+    margin-top: 40px;
+  background: transparent;
+    border-style: none;
+    border-bottom: 5px solid  rgba(19, 142, 166, 0.944);
+    width: 80%;
+    font-size: 16px;
+    color: black;
+    font-weight: 300;
+}
+form input:focus{
+    outline: transparent;
+}
+#loginbtn{
+    margin-top: 20px;
+    border-radius: 12px;
+    border: 2px solid  rgba(14, 115, 135, 0.944);
+    background-color:  rgba(14, 115, 135, 0.944);
+    padding: 10px;
+    width: 90%;
+}
+#loginbtn a{
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight:500;
+}
+#forgot{
+    border-style: none;
+    font-size: 16px;
+    font-weight: 500;
+    background: transparent;
+    transform: translateX(12em);
+}
+#forgot a{
+color: black;
+text-decoration: none;
+}
