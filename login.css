@@ -131,3 +131,104 @@ form input:focus{
 color: black;
 text-decoration: none;
 }
+/* ========== RESPONSIVE MEDIA QUERIES ========== */
+
+/* Medium devices (tablets, 768px to 991px) */
+@media (max-width: 991px) {
+    .container {
+        grid-template-columns: 1fr; /* Stack left and right side vertically */
+        column-gap: 0;
+        min-height: auto;
+    }
+
+    .leftside {
+        min-height: auto;
+        padding: 40px 20px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .rightside {
+        margin-right: 0;
+        min-height: auto;
+        padding: 20px;
+    }
+
+    .rightbox {
+        padding: 20px;
+    }
+
+    #forgot {
+        transform: translateX(0); /* Reset position for smaller screens */
+        margin-top: 10px;
+    }
+}
+
+/* Small devices (phones, 575px to 767px) */
+@media (max-width: 767px) {
+    #welcome {
+        font-size: 1.5rem;
+    }
+
+    #title {
+        font-size: 2rem;
+    }
+
+    #hello,
+    #gm {
+        font-size: 18px;
+        margin-left: 10px;
+    }
+
+    form input {
+        width: 90%;
+        font-size: 14px;
+    }
+
+    #loginbtn {
+        width: 100%;
+    }
+
+    #loginbtn a {
+        font-size: 20px;
+    }
+
+    #forgot {
+        font-size: 14px;
+    }
+}
+
+/* Extra small devices (under 575px) */
+@media (max-width: 575px) {
+    body {
+        background-attachment: scroll; /* Disable fixed background on small screens */
+    }
+
+    .container {
+        padding: 5px;
+    }
+
+    #welcome {
+        font-size: 1.2rem;
+    }
+
+    #title {
+        font-size: 1.5rem;
+    }
+
+    form {
+        row-gap: 20px;
+    }
+
+    form input {
+        margin-top: 20px;
+        border-bottom-width: 3px;
+    }
+}
+
+/* Orientation adjustments (landscape mode) */
+@media (orientation: landscape) and (max-height: 500px) {
+    .container {
+        min-height: 150vh; /* Increase height for landscape mode */
+    }
+}
