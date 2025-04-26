@@ -1,0 +1,469 @@
+body {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: black;
+    color: white;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+/* header------------------------------------------------------------------------------- */
+
+.header {
+    min-height: 30vh;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 0px 5%;
+}
+
+#burger {
+    font-weight: 600;
+}
+
+#since {
+    border: 1px solid gray;
+    padding: 20px 20px;
+    width: 15%;
+    border-radius: 9999px;
+    font-size: 20px;
+    background: transparent;
+    color: white;
+    transform: translateX(75vw);
+    margin-top: 40px;
+
+}
+
+/* title------------------------------ */
+#title {
+    font-size: 10rem;
+}
+
+.title p {
+    font-size: 1.2rem;
+}
+
+.title {
+    /* border: 2px solid red; */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin: 0px 4%;
+}
+
+/* --------banner------------------- */
+.bancont {
+    /* border: 2px yellow solid; */
+    background-image: url(images/Restaurant\ \(33\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120vh;
+    margin: 5%;
+    position: relative;
+}
+
+.bancont nav {
+    padding: 15px;
+    /* border: 2px solid red; */
+    width: 65%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    position: absolute;
+    bottom: 30px;
+    left: 15%;
+    border-radius: 9999px;
+    background-color: rgba(141, 134, 134, 0.4);
+}
+
+.bancont nav a {
+    padding: 15px;
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: 500;
+    color: white;
+}
+
+#bg{
+    background-color: black;
+    border-radius: 50px;
+
+}
+/* ---------------line------------- */
+#bline{
+    height: 11px;
+    border-radius: 5px;
+ background-color: white;
+    margin:7%;
+}
+/* small banner------------------------- */
+#spot{
+    font-size: 4rem;
+    margin: 20% 5% 5% 5%;
+}
+.subban{
+    margin: 5%;
+}
+.amount{
+    display: flex;
+    justify-content: space-around;
+    margin: 10% 5%;
+}
+#couple{
+    font-size: 2rem;
+    color: #f8d49e;
+    
+}
+#rupee{
+    font-size: 2rem;
+    
+}
+/* Payment gateway--------------------------------- */
+#para{
+    color: rgb(188, 186, 186);
+    font-size: 1.2rem;
+    width: 60%;
+    margin: 5%;
+}
+#token{
+    font-size: 2rem;
+    margin: 5%;
+}
+.pay{
+    margin: 5%;
+display: flex;
+flex-direction: column;
+row-gap: 20px;
+}
+#paytitle{
+    font-size: 4rem;
+    color: #f8d49e;
+}
+#paypara{
+    font-size: 1.3rem;
+    color: rgb(188, 186, 186);
+}
+#paypara>mark{
+    background-color: transparent;
+    font-size: 2rem;
+    color: #f8d49e;
+}
+#payment{
+   
+    padding: 10px;
+    font-weight: 500;
+    font-size: 1.3rem;
+    width: 15%;
+    background-color: #33ff00;
+    border-style: none;
+}
+#payment a{
+    text-decoration: none;
+    color: white;
+}
+.btn{
+    margin: 10% 5%;
+    text-align: end;
+}
+/* --------------calorie--------------- */
+.calorie{
+    font-size: 4rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 10%;
+}
+.calorie-card{
+    /* border: 2px solid red; */
+    margin: 3%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+#ccont{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+#view{
+    padding: 15px;
+    background-color: #555454;
+    font-size: 1rem;
+    font-weight: 500;
+    width: 55%;
+    border-style: none;
+}
+#view a{
+    text-decoration: none;
+    color: white;
+}
+.food{
+    /* border: 2px greenyellow solid; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 40px;
+ 
+}
+/* bigbanner--------------------------------------------------------- */
+.banimage{
+    max-width: 100%;
+    height:70%;
+ margin: 3%;
+ }
+ .bigbanner{
+     margin-top: 5%;
+ }
+ 
+ /* extra----------------------------------- */
+ #extra{
+     transform: translateX(70vw);
+     margin: 3%;
+ }
+ #line{
+     margin: 3%;
+ }
+ /* footer------------------------------- */
+ .footer{
+     /* border: 2px solid red; */
+     display: grid;
+     grid-template-columns: 35% 35% 30%;
+     justify-content: space-around;
+     margin-bottom: 5vh;
+ }
+ .f{
+ margin-left: 15%;
+ }
+ .social a{
+     text-decoration: none;
+     color: white;
+     margin-left: 10px;
+ }
+ #ftext{
+     /* border: 2px solid red; */
+     font-size: 17px;
+     width: 55%;
+     color: rgb(188, 186, 186);
+ }
+ 
+ #caps {
+     margin-top: 5vh;
+     margin-bottom: 5vh;
+     font-size: 24px;
+ }
+ /* copy---------------------------- */
+ #copy{
+     /* border: 2px solid red; */
+     padding: 10px;
+     margin-left: 5vw;
+     color: rgb(51, 50, 50);
+ }
+ /* ========== RESPONSIVE MEDIA QUERIES ========== */
+
+/* Large devices (1200px and up) - Default styles already cover this */
+
+/* Medium devices (992px to 1199px) */
+@media (max-width: 1199px) {
+    #title {
+        font-size: 8rem;
+    }
+    .bancont {
+        height: 100vh;
+    }
+    #spot {
+        font-size: 3.5rem;
+        margin: 15% 5% 5% 5%;
+    }
+    #paytitle {
+        font-size: 3.5rem;
+    }
+    #paypara {
+        font-size: 1.2rem;
+    }
+    #paypara>mark {
+        font-size: 1.5rem;
+    }
+    #payment {
+        width: 20%;
+    }
+}
+
+/* Small devices (768px to 991px) - Tablet */
+@media (max-width: 991px) {
+    .header {
+        min-height: 20vh;
+    }
+    #since {
+        width: 20%;
+        transform: translateX(60vw);
+    }
+    #title {
+        font-size: 6rem;
+    }
+    .bancont {
+        height: 80vh;
+    }
+    .bancont nav a {
+        font-size: 22px;
+    }
+    #spot {
+        font-size: 3rem;
+        margin: 12% 5% 5% 5%;
+    }
+    #couple, #rupee {
+        font-size: 1.8rem;
+    }
+    #para {
+        width: 80%;
+    }
+    #token {
+        font-size: 1.8rem;
+    }
+    #paytitle {
+        font-size: 3rem;
+    }
+    #payment {
+        width: 25%;
+    }
+    .calorie-card {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 40px;
+    }
+    .footer {
+        grid-template-columns: 1fr 1fr;
+    }
+    .social {
+        grid-column: span 2;
+    }
+}
+
+/* Extra small devices (575px to 767px) - Large mobile */
+@media (max-width: 767px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+    #since {
+        transform: none;
+        width: 40%;
+        margin: 20px auto;
+    }
+    #title {
+        font-size: 4.5rem;
+        text-align: center;
+    }
+    .title p {
+        text-align: center;
+    }
+    .bancont {
+        height: 60vh;
+    }
+    .bancont nav {
+        width: 90%;
+        left: 5%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .bancont nav a {
+        width: 100%;
+        text-align: center;
+        margin: 5px 0;
+    }
+    #bg {
+        width: 100%;
+    }
+    #spot {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .amount {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+    }
+    #para {
+        width: 90%;
+        margin: 5% auto;
+    }
+    #token {
+        text-align: center;
+    }
+    #paytitle {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    #payment {
+        width: 50%;
+    }
+    .btn {
+        text-align: center;
+    }
+    .calorie-card {
+        grid-template-columns: 1fr;
+    }
+    .footer {
+        grid-template-columns: 1fr;
+    }
+    .social {
+        grid-column: span 1;
+    }
+    #extra {
+        transform: none;
+        margin: 20px auto;
+    }
+}
+
+/* Small mobile devices (under 575px) */
+@media (max-width: 575px) {
+    #title {
+        font-size: 3.5rem;
+    }
+    #since {
+        width: 60%;
+        font-size: 16px;
+    }
+    #spot {
+        font-size: 2rem;
+    }
+    #couple, #rupee {
+        font-size: 1.5rem;
+    }
+    #token {
+        font-size: 1.5rem;
+    }
+    #paytitle {
+        font-size: 2rem;
+    }
+    #payment {
+        width: 60%;
+        font-size: 1.1rem;
+    }
+    .calorie {
+        font-size: 3rem;
+    }
+    #caps {
+        font-size: 20px;
+    }
+}
+
+/* Orientation adjustments */
+@media (orientation: landscape) and (max-width: 991px) {
+    .bancont {
+        height: 120vh;
+    }
+    .calorie-card {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* High-density displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+    /* Optional: Add high-res assets if available */
+}

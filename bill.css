@@ -1,0 +1,515 @@
+body {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: black;
+    color: white;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+/* header------------------------------------------------------------------------------- */
+
+.header {
+    min-height: 30vh;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 0px 5%;
+}
+
+#burger {
+    font-weight: 600;
+}
+
+#since {
+    border: 1px solid gray;
+    padding: 20px 20px;
+    width: 15%;
+    border-radius: 9999px;
+    font-size: 20px;
+    background: transparent;
+    color: white;
+    transform: translateX(75vw);
+    margin-top: 40px;
+
+}
+
+/* title------------------------------ */
+#title {
+    font-size: 10rem;
+}
+
+.title p {
+    font-size: 1.2rem;
+}
+
+.title {
+    /* border: 2px solid red; */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin: 0px 4%;
+}
+
+/* --------banner------------------- */
+.bancont {
+    /* border: 2px yellow solid; */
+    background-image: url(images/Restaurant\ \(33\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120vh;
+    margin: 5%;
+    position: relative;
+}
+
+.bancont nav {
+    padding: 15px;
+    /* border: 2px solid red; */
+    width: 65%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    position: absolute;
+    bottom: 30px;
+    left: 15%;
+    border-radius: 9999px;
+    background-color: rgba(141, 134, 134, 0.4);
+}
+
+.bancont nav a {
+    padding: 15px;
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: 500;
+    color: white;
+}
+
+#bg{
+    background-color: black;
+    border-radius: 50px;
+
+}
+/* ---------------------------------- */
+.reserve{
+    margin: 5% 5% 8% 5%;
+    font-size: 5rem;
+    color: #f8d49e;
+    text-align: center;
+}
+/* details---------------------------- */
+.details{
+    margin: 0% 5%;
+    font-size: 3rem;
+}
+.slot{
+    margin:2% 8% 8% 8%;
+}
+.dd{
+    padding: 40px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    border-bottom: 1px solid white;
+}
+#right{
+    color: #f8d49e;
+    text-align: start;
+}
+/* food------------------------------- */
+.flist{
+    margin: 10% 8% 3% 8%;
+    display: flex;
+    flex-direction: column;
+ position: relative;
+}
+.d3{
+   
+    border: 2px solid #F8D49E;
+    display: grid;
+   grid-template-columns: 10% 70%;
+   justify-content: flex-start;
+   padding: 10px;
+   margin-bottom: 8%;
+  
+}
+.dishcont{
+    row-gap: 10px;
+}
+#maindish{
+    font-size: 1.3rem;
+}
+#ingredients{
+    font-size: 1.3rem;
+    color:rgb(188, 186, 186);
+}
+
+
+/* ----------------position-------------------------- */
+.badge{
+    font-size: 1.2rem;
+    padding: 10px;
+    background-color: #F8D49E;
+    color: black;
+    border-style: none;
+    display: inline-block;
+    border-radius: 10px;
+}
+.badge{
+    transform: translate(50vw ,-55vh);
+}
+/* return------------------------- */
+#romance{
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+.return {
+    margin: 0% 5%;
+}
+#couples{
+    font-size: 2rem;
+    color: #F8D49E;
+}
+#homebtn{
+    border-style: none;
+    padding: 20px;
+    font-size: 1.3rem;
+    background-color: #797d81;
+    width: 20%;
+}
+#homebtn a{
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+}
+.homepage{
+    display: flex;
+    justify-content: space-between;
+}
+/* ---------------line------------- */
+#bline{
+    height: 11px;
+    border-radius: 5px;
+ background-color: white;
+    margin:7%;
+}
+
+
+/* --------------calorie--------------- */
+.calorie{
+    font-size: 4rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 10%;
+}
+.calorie-card{
+    /* border: 2px solid red; */
+    margin: 3%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+#ccont{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+#view{
+    padding: 15px;
+    background-color: #555454;
+    font-size: 1rem;
+    font-weight: 500;
+    width: 55%;
+    border-style: none;
+}
+#view a{
+    text-decoration: none;
+    color: white;
+}
+.food{
+    /* border: 2px greenyellow solid; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 40px;
+ 
+}
+/* bigbanner--------------------------------------------------------- */
+.banimage{
+    max-width: 100%;
+    height:70%;
+ margin: 3%;
+ }
+ .bigbanner{
+     margin-top: 5%;
+ }
+ 
+ /* extra----------------------------------- */
+ #extra{
+     transform: translateX(70vw);
+     margin: 3%;
+ }
+ #line{
+     margin: 3%;
+ }
+ /* footer------------------------------- */
+ .footer{
+     /* border: 2px solid red; */
+     display: grid;
+     grid-template-columns: 35% 35% 30%;
+     justify-content: space-around;
+     margin-bottom: 5vh;
+ }
+ .f{
+ margin-left: 15%;
+ }
+ .social a{
+     text-decoration: none;
+     color: white;
+     margin-left: 10px;
+ }
+ #ftext{
+     /* border: 2px solid red; */
+     font-size: 17px;
+     width: 55%;
+     color: rgb(188, 186, 186);
+ }
+ 
+ #caps {
+     margin-top: 5vh;
+     margin-bottom: 5vh;
+     font-size: 24px;
+ }
+ /* copy---------------------------- */
+ #copy{
+     /* border: 2px solid red; */
+     padding: 10px;
+     margin-left: 5vw;
+     color: rgb(51, 50, 50);
+ }
+/* ========== RESPONSIVE MEDIA QUERIES ========== */
+
+/* Large devices (1200px and up) - Default styles already cover this */
+
+/* Medium devices (992px to 1199px) */
+@media (max-width: 1199px) {
+    #title {
+        font-size: 8rem;
+    }
+    .bancont {
+        height: 100vh;
+    }
+    #reserved {
+        font-size: 4rem;
+    }
+    .details {
+        font-size: 2.5rem;
+    }
+    .dd {
+        font-size: 1.3rem;
+        padding: 30px 0;
+    }
+    .d3 {
+        grid-template-columns: 15% 70%;
+    }
+    .badge {
+        transform: translate(40vw, -55vh);
+    }
+    #homebtn {
+        width: 25%;
+    }
+}
+
+/* Small devices (768px to 991px) - Tablet */
+@media (max-width: 991px) {
+    .header {
+        min-height: 20vh;
+    }
+    #since {
+        width: 20%;
+        transform: translateX(60vw);
+    }
+    #title {
+        font-size: 6rem;
+    }
+    .bancont {
+        height: 80vh;
+    }
+    .bancont nav a {
+        font-size: 22px;
+    }
+    #reserved {
+        font-size: 3.5rem;
+    }
+    .details {
+        font-size: 2rem;
+    }
+    .slot {
+        margin: 2% 5% 8% 5%;
+    }
+    .d3 {
+        grid-template-columns: 20% 70%;
+    }
+    #maindish, #ingredients {
+        font-size: 1.1rem;
+    }
+    .badge {
+        font-size: 1rem;
+        transform: translate(30vw, -50vh);
+    }
+    #homebtn {
+        width: 35%;
+        font-size: 1.1rem;
+    }
+    .calorie-card {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 40px;
+    }
+    .footer {
+        grid-template-columns: 1fr 1fr;
+    }
+    .social {
+        grid-column: span 2;
+    }
+}
+
+/* Extra small devices (575px to 767px) - Large mobile */
+@media (max-width: 767px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+    #since {
+        transform: none;
+        width: 40%;
+        margin: 20px auto;
+    }
+    #title {
+        font-size: 4.5rem;
+        text-align: center;
+    }
+    .title p {
+        text-align: center;
+    }
+    .bancont {
+        height: 60vh;
+    }
+    .bancont nav {
+        width: 90%;
+        left: 5%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .bancont nav a {
+        width: 100%;
+        text-align: center;
+        margin: 5px 0;
+    }
+    #bg {
+        width: 100%;
+    }
+    #reserved {
+        font-size: 2.5rem;
+    }
+    .details {
+        font-size: 1.8rem;
+    }
+    .dd {
+        font-size: 1.1rem;
+        padding: 20px 0;
+    }
+    .d3 {
+        grid-template-columns: 25% 65%;
+    }
+    .badge {
+        transform: none;
+        position: static;
+        margin: 10px 0;
+        display: block;
+        width: fit-content;
+    }
+    #homebtn {
+        width: 50%;
+        margin: 0 auto;
+    }
+    .homepage {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+    }
+    .calorie-card {
+        grid-template-columns: 1fr;
+    }
+    .footer {
+        grid-template-columns: 1fr;
+    }
+    .social {
+        grid-column: span 1;
+    }
+    #extra {
+        transform: none;
+        margin: 20px auto;
+    }
+}
+
+/* Small mobile devices (under 575px) */
+@media (max-width: 575px) {
+    #title {
+        font-size: 3.5rem;
+    }
+    #since {
+        width: 60%;
+        font-size: 16px;
+    }
+    #reserved {
+        font-size: 2rem;
+    }
+    .details {
+        font-size: 1.5rem;
+    }
+    .dd {
+        font-size: 1rem;
+    }
+    .d3 {
+        grid-template-columns: 30% 60%;
+    }
+    #maindish, #ingredients {
+        font-size: 1rem;
+    }
+    #homebtn {
+        width: 70%;
+        font-size: 1rem;
+    }
+    .calorie {
+        font-size: 3rem;
+    }
+    #caps {
+        font-size: 20px;
+    }
+}
+
+/* Orientation adjustments */
+@media (orientation: landscape) and (max-width: 991px) {
+    .bancont {
+        height: 120vh;
+    }
+    .calorie-card {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .badge {
+        transform: translate(30vw, -40vh);
+    }
+}
+
+/* High-density displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+    /* Optional: Add high-res assets if available */
+}

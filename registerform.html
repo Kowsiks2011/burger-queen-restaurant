@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="registerform.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+    <div class="header">
+        <p id="burger">Burger Queen Restaurant</p>
+        <div><img src="images/Restaurant (48).png" alt="logo"></div>
+    </div>
+    <button type="button" id="since"><img id="star" src="images/starburst.png"> Since 1947</button>
+    <!-- -------------------------/////header end/////----------------------------------------- -->
+    <div class="title">
+        <p id="title">Burger<span style="color:#FCD043;"> Queen</span></p>
+        <p style="color: #FCD043;">EAT // RESTAURANT // TABLE RESERVATION // TAKE AWAY</p>
+    </div>
+    <!-- ------------------------------////title end//////----------------------------------------- -->
+    <div class="banner">
+        <div class="bancont">
+            <nav>
+                <a href="home.html">Home</a>
+                <a id="bg"  href="booking.html">Spot Booking</a>
+                <a href="menu.html">Food Menu</a>
+                <a href="about.html">About</a>
+            </nav>
+        </div>
+    </div>
+    <div id="bline"></div>
+    <!-- ----------------------------------------------------------------- -->
+    <div class="booking">
+        <p id="book">Restaurant booking</p>
+        <div class="opening">
+            <p id="hours">Opening Hours</p>
+            <div class="container">
+                <div class="days">
+                    <div class="day1 dd">
+                        <p><span style="color: #f8d49e;">MON</span>DAY</p>
+                        <p><span style="color: red;">CLOSED</span></p>
+                    </div>
+                    <div class="day2 dd">
+                        <p><span style="color: #F8d49e;">TUES</span>DAY - <span style="color: #F8d49e;">FRI</span>DAY
+                        </p>
+                        <p>10 am - 8 pm</p>
+                    </div>
+                    <div class="day3 dd">
+                        <p><span style="color: #F8d49e;">SATUR</span>DAY - <span style="color: #F8d49e;">SUN</span>DAY
+                        </p>
+                        <p>7 am - 8 pm</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <!-- ------------------------------------------------------------------------->
+    <div class="spotbook">
+        <p id="tablebook">Booking</p>
+    </div>
+    <div class="booking-table">
+        <div class="container-book">
+            <p id="big">Book a table</p>
+            <p id="small">Our dining atmosphere is casual and comfortable.To reflect this environment,we maintain a
+                formal dress.</p>
+        </div>
+        <div class="form">
+        <form>
+            <div class="name">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="Name" required></div>
+            <div class="number">
+            <label for="number">Number of guests</label>
+            <input type="number" id="number" placeholder="0" required></div>
+            <div class="datetime">
+                <div class="date">
+            <label for="date">Date</label>
+            <input type="date" id="date" required>
+            </div>
+            <div class="time">
+            <label for="time">Time</label>
+            <input type="time" id="time" required></div></div>
+            <button id="bookbtn"><a href="pay.html">Book A Table</a></button>
+        </form>
+        </div>
+    </div>
+    <!-- --------calorie------------------------------------ -->
+     <div class="calorie">
+        <p id="cal">Calories Energy Balance</p>
+     </div>
+     <div class="calorie-card">
+        <div class="food">
+            <img src="images/Restaurant (45).png" alt="food">
+            <p id="ccont">Vegetable Stew</p>
+            <button id="view"><a href="menu.html">View food</a></button>
+        </div>
+
+        <div class="food">
+            <img src="images/Restaurant (46).png" alt="food">
+            <p id="ccont">Morning Breakfast</p>
+            <button id="view"><a href="menu.html">View food</a></button>
+        </div>
+
+        <div class="food">
+            <img src="images/Restaurant (47).png" alt="food">
+            <p id="ccont">Avacado semiya</p>
+            <button id="view"><a href="menu.html">View food</a></button>
+        </div>
+     </div>
+
+<!-- --------------------------------------------------------------------- -->
+  <!-- big banner -->
+  <div class="bigbanner">
+    <div class="banimage">
+        <img src="images/Restaurant (37).png" alt="banner">
+    </div>
+</div>
+    <img id="extra" src="images/Restaurant (48).png" alt="logo">
+    <hr id="line">
+
+    <!-- ////////////////////////////// -->
+    <div class="footer">
+
+        <div class="about f">
+            <p id="caps"><span style="color: #FCD043;">/</span>ABOUT US</p>
+            <p id="ftext">The five-star Restaurant in a beautiful Chennai city with a
+                modernrestaurant,conference-hall.</p>
+        </div>
+
+        <div class="news f">
+            <p id="caps"><span style="color: #FCD043;">/</span>News</p>
+            <p id="ftext">Sign up to our newsletter not to miss exclusive offers and information about the
+                upcoming
+                events.</p>
+        </div>
+
+        <div class="social f">
+            <p id="caps"><span style="color: #FCD043;">/</span>SOCIAL</p>
+            <ol>
+                <a href="">FACEBOOK</a>
+                <a href="">INSTAGRAM</a>
+                <a href="">TWITTER</a>
+            </ol>
+        </div>
+
+
+    </div>
+    <p id="copy">&copy;2025 All rights reserved.Burger Queen</p>
+</body>
+
+</html>

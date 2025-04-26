@@ -1,0 +1,486 @@
+body {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: black;
+    color: white;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+/* header------------------------------------------------------------------------------- */
+
+.header {
+    min-height: 30vh;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 0px 5%;
+}
+
+#burger {
+    font-weight: 600;
+}
+
+#since {
+    border: 1px solid gray;
+    padding: 20px 20px;
+    width: 15%;
+    border-radius: 9999px;
+    font-size: 20px;
+    background: transparent;
+    color: white;
+    transform: translateX(75vw);
+    margin-top: 40px;
+
+}
+
+/* title------------------------------ */
+#title {
+    font-size: 10rem;
+}
+
+.title p {
+    font-size: 1.2rem;
+}
+
+.title {
+    /* border: 2px solid red; */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin: 0px 4%;
+}
+
+/* --------banner------------------- */
+.bancont {
+    /* border: 2px yellow solid; */
+    background-image: url(images/Restaurant\ \(31\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120vh;
+    margin: 5%;
+    position: relative;
+}
+
+.bancont nav {
+    padding: 15px;
+    /* border: 2px solid red; */
+    width: 65%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    position: absolute;
+    bottom: 30px;
+    left: 15%;
+    border-radius: 9999px;
+    background-color: rgba(141, 134, 134, 0.4);
+}
+
+.bancont nav a {
+    padding: 15px;
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: 500;
+    color: white;
+}
+
+#bg{
+    background-color: black;
+    width: 15%;
+    text-align: center;
+    border-radius: 50px;
+
+}
+
+/* explore food--------------------- */
+.explorefood {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 15% 3% 10% 3%;
+
+    /* border: 2px solid greenyellow; */
+}
+
+.foodcont {
+    background-color: rgb(234, 231, 231);
+    padding: 20px;
+    color: black;
+
+}
+
+#large {
+    font-size: 5rem;
+}
+
+#largecont {
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+#largesmall {
+    margin-top: 20px;
+    font-size: 24px;
+    color: rgb(81, 80, 80);
+}
+
+#explore {
+    background-color: black;
+    padding: 10px;
+    width: 30%;
+    margin-top: 60px;
+    transform: translateX(250px);
+    height: 70px;
+}
+
+#explore a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+/* ---------------line------------- */
+#bline{
+    height: 11px;
+    border-radius: 5px;
+    background-color: white;
+    margin:7%;
+    position: relative;
+}
+
+
+/* special--------------------------------------- */
+.special {
+    /* border:  2px solid red; */
+    margin: 0 5%;
+}
+
+.special>p {
+    font-size: 5rem;
+}
+
+.recipe>p {
+    font-size: 5rem;
+}
+
+.rcont {
+    /* border: 2px solid yellow; */
+    font-size: 2rem;
+    width: 47%;
+    padding: 10px;
+    margin-top: 2%;
+}
+
+.rcont>p {
+    margin-bottom: 5px;
+}
+
+.recipe {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.foodtypes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+}
+
+.ima {
+    text-align: center;
+    padding: 20px;
+    /* border: 2px solid red; */
+    border-right: 8px solid rgb(188, 186, 186);
+}
+
+.foodtypes img {
+    width: 80%;
+    height: 60%;
+}
+
+.card {
+    padding: 10px;
+}
+
+#ft {
+    margin: 20px 0px;
+    text-align: center;
+    font-size: 30px;
+}
+
+#ftc {
+    color: rgb(188, 186, 186);
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+/* location-------------------------- */
+.location {
+    padding: 10px;
+    margin: 10% 6%;
+}
+
+#loc {
+    font-size: 7rem;
+}
+#loc{
+    background: linear-gradient(white 50%,rgb(196, 202, 232) 50%);
+    color: transparent;
+    background-clip: text;
+    padding: 10px;
+    position: relative;
+
+}
+.gradi{
+    text-align: center;
+    background-color: black;
+    width: 45%;
+    transform: translate(25vw,-40vh);
+z-index: 9999;
+}
+
+.details {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 60px;
+}
+
+.details img {
+    width: 90%;
+    height: 100vh;
+}
+
+.place {
+    /* border: 2px solid red; */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#geo {
+    margin: 20px 30px;
+    font-size: 40px;
+}
+
+#geocont {
+    font-size: 16px;
+    line-height: 8vh;
+    /* border: 2px solid greenyellow; */
+    margin: 20px 20px;
+}
+
+/* offers---------------------------------- */
+.offercard {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 10vh;
+}
+
+.offer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+#view {
+    padding: 10px;
+    background-color: #33ff00;
+    border-style: none;
+    font-size: 20px;
+    color: white;
+    font-weight: 500;
+    width: 40%;
+
+}
+#view a{
+    text-decoration: none;
+    color: white;
+}
+
+.price {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+#mainoff {
+    margin-top: 20px;
+    font-size: 12px;
+    width: 85%;
+}
+
+#offtitle {
+    font-size: 5rem;
+    font-weight: 500;
+    background: linear-gradient(white 50%,rgb(196, 202, 232) 50%);
+    color: transparent;
+    background-clip: text;
+    padding: 10px;
+    position: relative;
+}
+.gra{
+    text-align: center;
+    background-color: black;
+    width: 35%;
+    transform: translate(15vw,-25vh);
+z-index: 9999;
+}
+
+#fifty {
+    font-size: 3rem;
+    position: relative;
+    transform: translateX(80%);
+}
+
+/* extra----------------------------------- */
+#extra{
+    transform: translateX(70vw);
+    margin: 5%;
+}
+#line{
+    margin: 3%;
+}
+/* footer------------------------------- */
+.footer{
+    /* border: 2px solid red; */
+    display: grid;
+    grid-template-columns: 35% 35% 30%;
+    justify-content: space-around;
+    margin-bottom: 5vh;
+}
+
+.f{
+margin-left: 15%;
+}
+.social a{
+    text-decoration: none;
+    color: white;
+    margin-left: 10px;
+}
+#ftext{
+    /* border: 2px solid red; */
+    font-size: 17px;
+    width: 55%;
+    color: rgb(188, 186, 186);
+}
+
+#caps {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    font-size: 24px;
+}
+/* copy---------------------------- */
+#copy{
+    /* border: 2px solid red; */
+    padding: 10px;
+    margin-left: 5vw;
+    color: rgb(51, 50, 50);
+}
+/* ================= MEDIA QUERIES (COMBINED) ================= */
+/* Large devices (desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    /* Default styles (already in your CSS) */
+  }
+  
+  /* Medium devices (tablets, 992px to 1199px) */
+  @media (max-width: 1199px) and (min-width: 992px) {
+    #title { font-size: 8rem; }
+    .bancont { height: 100vh; }
+    .bancont nav a { font-size: 24px; }
+    #large { font-size: 4rem; }
+    #largecont { font-size: 2rem; }
+    .special > p, .recipe > p { font-size: 4rem; }
+    
+    /* Gradient text adjustments */
+    #loc, #offtitle { font-size: 6rem; }
+    .gradi, .gra { 
+      width: 45%; 
+      transform: translate(25vw, -25vh); 
+    }
+  }
+  
+  /* Small devices (landscape phones, 768px to 991px) */
+  @media (max-width: 991px) and (min-width: 768px) {
+    #title { font-size: 6rem; }
+    .bancont { height: 80vh; }
+    .bancont nav { width: 80%; left: 10%; }
+    .bancont nav a { font-size: 20px; padding: 10px; }
+    #bg { width: 20%; }
+    
+    /* Gradient text adjustments */
+    #loc, #offtitle { font-size: 4rem; }
+    .gradi, .gra { 
+      width: 60%; 
+      transform: translate(20vw, -15vh); 
+    }
+    
+    .foodtypes { grid-template-columns: 1fr; }
+    .details { grid-template-columns: 1fr; }
+    .details img { height: 50vh; width: 100%; }
+  }
+  
+  /* Extra small devices (portrait phones, 576px to 767px) */
+  @media (max-width: 767px) and (min-width: 576px) {
+    #title { font-size: 4rem; }
+    #since { font-size: 16px; width: 40%; }
+    .bancont { height: 60vh; }
+    
+    /* Gradient text adjustments */
+    #loc, #offtitle { font-size: 3rem; }
+    .gradi, .gra { 
+      width: 80%; 
+      transform: translate(10vw, -10vh);
+      background-color: transparent; 
+    }
+    
+    .special > p, .recipe > p, #offtitle { font-size: 2.5rem; }
+    #geo { font-size: 30px; }
+    #geocont { line-height: 5vh; }
+  }
+  
+  /* Tiny devices (phones, less than 576px) */
+  @media (max-width: 575px) {
+    #title { font-size: 3rem; }
+    .bancont nav { 
+      flex-direction: column; 
+      width: 90%; 
+      left: 5%; 
+      border-radius: 20px;
+    }
+    
+    /* Gradient text adjustments */
+    #loc, #offtitle { 
+      font-size: 2.5rem; 
+      text-align: center;
+    }
+    .gradi, .gra { 
+      width: 100%; 
+      transform: none;
+      padding: 0 5%; 
+    }
+    
+    #large { font-size: 2.5rem; }
+    .price { flex-direction: column; }
+    #view { width: 80%; }
+  }
+  
+  /* Orientation adjustments */
+  @media (orientation: portrait) and (max-width: 992px) {
+    .bancont { height: 50vh; }
+    .details img { height: 40vh; }
+  }

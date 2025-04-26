@@ -1,0 +1,474 @@
+body {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: black;
+    color: white;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+/* header------------------------------------------------------------------------------- */
+
+.header {
+    min-height: 30vh;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 0px 5%;
+}
+
+#burger {
+    font-weight: 600;
+}
+
+#since {
+    border: 1px solid gray;
+    padding: 20px 20px;
+    width: 15%;
+    border-radius: 9999px;
+    font-size: 20px;
+    background: transparent;
+    color: white;
+    transform: translateX(75vw);
+    margin-top: 40px;
+
+}
+
+/* title------------------------------ */
+#title {
+    font-size: 10rem;
+}
+
+.title p {
+    font-size: 1.2rem;
+}
+
+.title {
+    /* border: 2px solid red; */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin: 0px 4%;
+}
+
+/* --------banner------------------- */
+.bancont {
+    /* border: 2px yellow solid; */
+    background-image: url(images/Restaurant\ \(32\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120vh;
+    margin: 5%;
+    position: relative;
+}
+.bancont nav {
+    padding: 15px;
+    /* border: 2px solid red; */
+    width: 65%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    position: absolute;
+    bottom: 30px;
+    left: 15%;
+    border-radius: 9999px;
+    background-color: rgba(141, 134, 134, 0.4);
+}
+
+.bancont nav a {
+    padding: 15px;
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: 500;
+    color: white;
+}
+
+#bg{
+    background-color: black;
+    border-radius: 50px;
+
+}
+/* ---------------line------------- */
+#bline{
+    height: 11px;
+    border-radius: 5px;
+ background-color: white;
+    margin:7%;
+}
+/* -----------------booking------------------------------ */
+.booking{
+    /* border: 2px solid red; */
+    padding: 10px;
+    margin: 15% 4%;
+}
+#book{
+    font-size: 80px;
+    color: #F8D49E;
+}
+#hours{
+    margin-top: 10%;
+    font-size: 35px;
+    font-weight: 500;
+    text-align: center;
+}
+/* overflow container */
+.container{
+    /* border: 2px solid red; */
+    width: 90%;
+    margin-left: 20%;
+    overflow-x: hidden;
+}
+.days{
+    margin: 5%;
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    row-gap: 8vh;
+}
+.dd{
+    font-size: 38px;
+    font-weight: 500;
+    /* border: 2px solid greenyellow; */
+   display: grid;
+   align-content: space-around;
+   grid-template-columns: 40% 30%;
+}
+/* ----------book-container------------ */
+.book-container{
+    /* border: 2px solid green; */
+    padding: 20px;
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+    row-gap: 12%;
+}
+.card{
+    width: 90%;
+    /* border: 2px solid red; */
+    display: grid;
+    grid-template-columns: 15% 50%;
+    justify-content:space-around;
+}
+.ccont{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.chead{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+#ctitle{
+    font-size: 4em;
+}
+#amount{
+    font-size: 2em;
+}
+.cdescribe{
+    /* border: 2px solid red; */
+    width: 112%;
+    font-size: 1.2em;
+    color: rgb(188, 186, 186);
+}
+.cbuttons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px solid red; */
+   
+}
+#couple{
+    font-size: 2em;
+    color:#F8D49E ; 
+}
+#spot{
+    font-size: 1.5em;
+    font-weight: 400;
+    background-color: #F8D49E;
+    padding: 10px;
+    width: 15vw;
+    height: 10vh;
+}
+#spot a{
+    text-decoration: none;
+    color: black;
+}
+/* bigbanner--------------------------------------------------------- */
+.banimage{
+   max-width: 100%;
+   height:70%;
+margin: 3%;
+}
+.bigbanner{
+    margin-top: 50%;
+}
+
+/* extra----------------------------------- */
+#extra{
+    transform: translateX(70vw);
+    margin: 3%;
+}
+#line{
+    margin: 3%;
+}
+/* footer------------------------------- */
+.footer{
+    /* border: 2px solid red; */
+    display: grid;
+    grid-template-columns: 35% 35% 30%;
+    justify-content: space-around;
+    margin-bottom: 5vh;
+}
+.f{
+margin-left: 15%;
+}
+.social a{
+    text-decoration: none;
+    color: white;
+    margin-left: 10px;
+}
+#ftext{
+    /* border: 2px solid red; */
+    font-size: 17px;
+    width: 55%;
+    color: rgb(188, 186, 186);
+}
+
+#caps {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    font-size: 24px;
+}
+/* copy---------------------------- */
+#copy{
+    /* border: 2px solid red; */
+    padding: 10px;
+    margin-left: 5vw;
+    color: rgb(51, 50, 50);
+}
+/* ========== RESPONSIVE MEDIA QUERIES ========== */
+
+/* Large devices (1200px and up) - Default styles already cover this */
+
+/* Medium devices (992px to 1199px) */
+@media (max-width: 1199px) {
+    #title {
+        font-size: 8rem;
+    }
+    .bancont {
+        height: 100vh;
+    }
+    #book {
+        font-size: 6rem;
+    }
+    .dd {
+        font-size: 2.5rem;
+    }
+    #ctitle {
+        font-size: 3.5em;
+    }
+    .card {
+        grid-template-columns: 20% 50%;
+    }
+    #spot {
+        width: 18vw;
+    }
+}
+
+/* Small devices (768px to 991px) - Tablet */
+@media (max-width: 991px) {
+    .header {
+        min-height: 20vh;
+    }
+    #since {
+        width: 20%;
+        transform: translateX(60vw);
+    }
+    #title {
+        font-size: 6rem;
+    }
+    .bancont {
+        height: 80vh;
+    }
+    .bancont nav a {
+        font-size: 22px;
+    }
+    #book {
+        font-size: 5rem;
+    }
+    .container {
+        width: 85%;
+        margin-left: 15%;
+    }
+    .dd {
+        font-size: 2rem;
+        grid-template-columns: 50% 30%;
+    }
+    .book-container {
+        grid-template-rows: auto;
+        row-gap: 8%;
+    }
+    .card {
+        grid-template-columns: 25% 60%;
+    }
+    #ctitle {
+        font-size: 3rem;
+    }
+    #spot {
+        width: 25vw;
+    }
+    .bigbanner {
+        margin-top: 40%;
+    }
+    .footer {
+        grid-template-columns: 1fr 1fr;
+    }
+    .social {
+        grid-column: span 2;
+    }
+}
+
+/* Extra small devices (575px to 767px) - Large mobile */
+@media (max-width: 767px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+    #since {
+        transform: none;
+        width: 40%;
+        margin: 20px auto;
+    }
+    #title {
+        font-size: 4.5rem;
+        text-align: center;
+    }
+    .title p {
+        text-align: center;
+    }
+    .bancont {
+        height: 60vh;
+    }
+    .bancont nav {
+        width: 90%;
+        left: 5%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .bancont nav a {
+        width: 100%;
+        text-align: center;
+        margin: 5px 0;
+    }
+    #bg {
+        width: 100%;
+    }
+    #book {
+        font-size: 3.5rem;
+        text-align: center;
+    }
+    .container {
+        width: 100%;
+        margin-left: 0;
+    }
+    .days {
+        margin: 5% 10%;
+    }
+    .dd {
+        font-size: 1.5rem;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .card {
+        grid-template-columns: 1fr;
+        width: 95%;
+        gap: 20px;
+    }
+    #ctitle {
+        font-size: 2.5rem;
+    }
+    .cdescribe {
+        width: 100%;
+    }
+    #spot {
+        width: 50%;
+        margin: 0 auto;
+    }
+    .bigbanner {
+        margin-top: 30%;
+    }
+    .footer {
+        grid-template-columns: 1fr;
+        row-gap: 30px;
+    }
+    .social {
+        grid-column: span 1;
+    }
+    #extra {
+        transform: none;
+        margin: 20px auto;
+    }
+}
+
+/* Small mobile devices (under 575px) */
+@media (max-width: 575px) {
+    #title {
+        font-size: 3.5rem;
+    }
+    #since {
+        width: 60%;
+        font-size: 16px;
+    }
+    #book {
+        font-size: 2.8rem;
+    }
+    #ctitle {
+        font-size: 2rem;
+    }
+    #spot {
+        width: 70%;
+    }
+    #caps {
+        font-size: 20px;
+    }
+}
+
+/* Orientation adjustments */
+@media (orientation: landscape) and (max-width: 991px) {
+    .bancont {
+        height: 120vh;
+    }
+    .bigbanner {
+        margin-top: 25%;
+    }
+}
+
+/* High-density displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+    /* Optional: Add high-res assets if available */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

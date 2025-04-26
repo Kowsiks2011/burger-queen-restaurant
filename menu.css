@@ -1,0 +1,401 @@
+body {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: black;
+    color: white;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+/* header------------------------------------------------------------------------------- */
+
+.header {
+    min-height: 30vh;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 0px 5%;
+}
+
+#burger {
+    font-weight: 600;
+}
+
+#since {
+    border: 1px solid gray;
+    padding: 20px 20px;
+    width: 15%;
+    border-radius: 9999px;
+    font-size: 20px;
+    background: transparent;
+    color: white;
+    transform: translateX(75vw);
+    margin-top: 40px;
+
+}
+
+/* title------------------------------ */
+#title {
+    font-size: 10rem;
+}
+
+.title p {
+    font-size: 1.2rem;
+}
+
+.title {
+    /* border: 2px solid red; */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin: 0px 4%;
+}
+
+/* --------banner------------------- */
+.bancont {
+    /* border: 2px yellow solid; */
+    background-image: url(images/Restaurant\ \(34\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120vh;
+    margin: 5%;
+    position: relative;
+}
+
+.bancont nav {
+    padding: 15px;
+    /* border: 2px solid red; */
+    width: 65%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    position: absolute;
+    bottom: 30px;
+    left: 15%;
+    border-radius: 9999px;
+    background-color: rgba(141, 134, 134, 0.4);
+}
+
+.bancont nav a {
+    padding: 15px;
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: 500;
+    color: white;
+}
+
+#bg{
+    background-color: black;
+    border-radius: 50px;
+
+}
+/* ---------------line------------- */
+#bline{
+    height: 11px;
+    border-radius: 5px;
+ background-color: white;
+    margin:7%;
+}
+/* starter--------------------------------- */
+#foodhead{
+    padding: 10px;
+    margin-left: 4%;
+    font-size: 4rem;
+    color: #F8D49E;
+}
+.starter-container{
+    /* border: 2px solid red; */
+    margin: 10% 5% 5% 5%;
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+    row-gap: 20vh;
+}
+.container{
+    /* border: 2px solid greenyellow; */
+    display: grid;
+    grid-template-columns: 43% 57%;  
+}
+#conthead{
+    font-size: 4rem;
+    color: #F8D49E;
+}
+.dish{
+    border: 2px solid #F8D49E;
+    display: grid;
+   grid-template-columns: 15% 50% 33%;
+   justify-items: flex-end;
+   padding: 10px;
+}
+.dishcont{
+    margin-left: 4%;
+    justify-self:self-start;
+}
+#maindish{
+    font-size: 1.3rem;
+}
+#ingredients{
+    font-size: 1.3rem;
+    color:rgb(188, 186, 186);
+}
+.starter{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    /* border: 2px solid lightpink; */
+}
+#price{
+    font-size: 1.3rem;
+}
+del{
+    color: red;
+}
+
+/* extra----------------------------------- */
+#extra{
+    transform: translateX(70vw);
+    margin-bottom: 5%;
+}
+#line{
+    margin: 3%;
+}
+/* footer------------------------------- */
+.footer{
+    /* border: 2px solid red; */
+    display: grid;
+    grid-template-columns: 35% 35% 30%;
+    justify-content: space-around;
+    margin-bottom: 5vh;
+}
+.f{
+margin-left: 15%;
+}
+.social a{
+    text-decoration: none;
+    color: white;
+    margin-left: 10px;
+}
+#ftext{
+    /* border: 2px solid red; */
+    font-size: 17px;
+    width: 55%;
+    color: rgb(188, 186, 186);
+}
+
+#caps {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    font-size: 24px;
+}
+/* copy---------------------------- */
+#copy{
+    /* border: 2px solid red; */
+    padding: 10px;
+    margin-left: 5vw;
+    color: rgb(51, 50, 50);
+}
+/* ========== RESPONSIVE MEDIA QUERIES ========== */
+
+/* Large devices (1200px and up) - Default styles already cover this */
+
+/* Medium devices (992px to 1199px) */
+@media (max-width: 1199px) {
+    #title {
+        font-size: 8rem;
+    }
+    .bancont {
+        height: 100vh;
+    }
+    #foodhead {
+        font-size: 3.5rem;
+    }
+    #conthead {
+        font-size: 3.5rem;
+    }
+    .container {
+        grid-template-columns: 40% 60%;
+    }
+    .dish {
+        grid-template-columns: 20% 50% 30%;
+    }
+}
+
+/* Small devices (768px to 991px) - Tablet */
+@media (max-width: 991px) {
+    .header {
+        min-height: 20vh;
+    }
+    #since {
+        width: 20%;
+        transform: translateX(60vw);
+    }
+    #title {
+        font-size: 6rem;
+    }
+    .bancont {
+        height: 80vh;
+    }
+    .bancont nav a {
+        font-size: 22px;
+    }
+    #foodhead {
+        font-size: 3rem;
+        text-align: center;
+        margin-left: 0;
+    }
+    .starter-container {
+        grid-template-rows: auto;
+        row-gap: 15vh;
+        margin: 10% 3%;
+    }
+    .container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .container img {
+        width: 100%;
+        height: auto;
+    }
+    #conthead {
+        font-size: 3rem;
+        text-align: center;
+    }
+    .dish {
+        grid-template-columns: 15% 55% 30%;
+    }
+    #maindish, #ingredients, #price {
+        font-size: 1.1rem;
+    }
+}
+
+/* Extra small devices (575px to 767px) - Large mobile */
+@media (max-width: 767px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+    #since {
+        transform: none;
+        width: 40%;
+        margin: 20px auto;
+    }
+    #title {
+        font-size: 4.5rem;
+        text-align: center;
+    }
+    .title p {
+        text-align: center;
+    }
+    .bancont {
+        height: 60vh;
+    }
+    .bancont nav {
+        width: 90%;
+        left: 5%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .bancont nav a {
+        width: 100%;
+        text-align: center;
+        margin: 5px 0;
+    }
+    #bg {
+        width: 100%;
+    }
+    #foodhead {
+        font-size: 2.5rem;
+    }
+    .starter-container {
+        row-gap: 12vh;
+    }
+    #conthead {
+        font-size: 2.5rem;
+    }
+    .dish {
+        grid-template-columns: 20% 50% 30%;
+        padding: 8px;
+    }
+    #maindish, #ingredients, #price {
+        font-size: 1rem;
+    }
+    .footer {
+        grid-template-columns: 1fr;
+        row-gap: 30px;
+    }
+    .f {
+        margin-left: 5%;
+    }
+    #ftext {
+        width: 90%;
+    }
+    #extra {
+        transform: none;
+        margin: 20px auto;
+    }
+}
+
+/* Small mobile devices (under 575px) */
+@media (max-width: 575px) {
+    #title {
+        font-size: 3.5rem;
+    }
+    #since {
+        width: 60%;
+        font-size: 16px;
+    }
+    #foodhead {
+        font-size: 2rem;
+    }
+    .starter-container {
+        margin: 10% 3%;
+        row-gap: 10vh;
+    }
+    #conthead {
+        font-size: 2rem;
+    }
+    .dish {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    .dish img {
+        width: 100%;
+        height: auto;
+    }
+    .dishcont {
+        margin-left: 0;
+        text-align: center;
+    }
+    #price {
+        text-align: center;
+    }
+    #caps {
+        font-size: 20px;
+    }
+}
+
+/* Orientation adjustments */
+@media (orientation: landscape) and (max-width: 991px) {
+    .bancont {
+        height: 120vh;
+    }
+    .starter-container {
+        row-gap: 8vh;
+    }
+}
+
+/* High-density displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+    /* Optional: Add high-res assets if available */
+}
+

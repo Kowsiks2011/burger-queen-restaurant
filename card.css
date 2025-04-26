@@ -1,0 +1,539 @@
+body {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: black;
+    color: white;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+/* header------------------------------------------------------------------------------- */
+
+.header {
+    min-height: 30vh;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 0px 5%;
+}
+
+#burger {
+    font-weight: 600;
+}
+
+#since {
+    border: 1px solid gray;
+    padding: 20px 20px;
+    width: 15%;
+    border-radius: 9999px;
+    font-size: 20px;
+    background: transparent;
+    color: white;
+    transform: translateX(75vw);
+    margin-top: 40px;
+
+}
+
+/* title------------------------------ */
+#title {
+    font-size: 10rem;
+}
+
+.title p {
+    font-size: 1.2rem;
+}
+
+.title {
+    /* border: 2px solid red; */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin: 0px 4%;
+}
+
+/* --------banner------------------- */
+.bancont {
+    /* border: 2px yellow solid; */
+    background-image: url(images/Restaurant\ \(33\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120vh;
+    margin: 5%;
+    position: relative;
+}
+
+.bancont nav {
+    padding: 15px;
+    /* border: 2px solid red; */
+    width: 65%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    position: absolute;
+    bottom: 30px;
+    left: 15%;
+    border-radius: 9999px;
+    background-color: rgba(141, 134, 134, 0.4);
+}
+
+.bancont nav a {
+    padding: 15px;
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: 500;
+    color: white;
+}
+
+#bg{
+    background-color: black;
+    border-radius: 50px;
+
+}
+/* ---------------line------------- */
+#bline{
+    height: 11px;
+    border-radius: 5px;
+ background-color: white;
+    margin:7%;
+}
+/* book------------------------------------------------- */
+.spotbook{
+    font-size: 4rem;
+    color: #F8D49E;
+    margin: 5%;
+}
+.country{
+    margin: 5%;
+    line-height: 5rem;
+}
+#country{
+    font-size: 1.5rem;
+}
+#india{
+    font-size: 2rem;
+    color: #F8D49E;
+}
+.booking-table{
+    /* border: 2px solid red; */
+    margin: 10% 5% 10% 5%;
+}
+.container-book{
+    /* border: 2px solid red; */
+    width: 40%;
+    margin-bottom: 5%;
+}
+#big{
+    font-size: 2.5rem;
+}
+#small{
+    font-size: 1.2rem;
+}
+/* form--------------------------------- */
+.form{
+    max-width: 80%;
+    margin-bottom: 25%;
+}
+label{
+    font-size: 1rem;
+}
+input{
+    color: white;
+    padding: 20px;
+    font-size: 1.2rem;
+    border: 2px solid #F8D49E;
+    background-color: transparent;
+    border-radius: 10px;
+}
+input:focus{
+    outline: transparent;
+}
+#fdetail{
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+   
+}
+ .name{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    row-gap: 20px;
+ }
+ .card{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    row-gap: 20px;
+ }
+
+ .year
+ 
+ {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    row-gap: 20px;
+ }
+ .ccv{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    row-gap: 20px;
+ }
+
+ .datetime{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 20px;
+ }
+ #fpay{
+    margin: 10% 0%;
+ }
+ .digitalpay{
+    padding: 10px 20px;
+    background-color: rgb(91, 89, 89,0.5);
+    border-radius: 10px;
+    display: flex;
+    justify-content:space-evenly;
+    width: 70%;
+ }
+ .digitalpay label{
+    font-size: 1.2rem;
+    font-weight: 500;
+ }
+ input[type="radio"]{
+    transform: scale(120%);
+ }
+ .btnbtn{
+    display: flex;
+    justify-content: flex-end;
+ }
+ #paybtn{
+    margin: 10% 0% 3% 5%;
+    padding: 10px 20px;
+    width: 30%;
+    font-size: 1.3rem;
+    background-color: #F8D49E;
+    border-style: none;
+    display: none;
+   
+ }
+ #paybtn a{
+    text-decoration: none;
+    color: black;
+ }
+/* When any radio in the form is checked, show paybtn */
+form:has(input[type="radio"]:checked) #paybtn {
+    display: block;
+}
+
+/* --------------calorie--------------- */
+.calorie{
+    font-size: 4rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 10%;
+}
+.calorie-card{
+    /* border: 2px solid red; */
+    margin: 3%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+#ccont{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+#view{
+    padding: 15px;
+    background-color: #555454;
+    font-size: 1rem;
+    font-weight: 500;
+    width: 55%;
+    border-style: none;
+}
+#view a{
+    text-decoration: none;
+    color: white;
+}
+.food{
+    /* border: 2px greenyellow solid; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 40px;
+ 
+}
+/* bigbanner--------------------------------------------------------- */
+.banimage{
+    max-width: 100%;
+    height:70%;
+ margin: 3%;
+ }
+ .bigbanner{
+     margin-top: 5%;
+ }
+ 
+ /* extra----------------------------------- */
+ #extra{
+     transform: translateX(70vw);
+     margin: 3%;
+ }
+ #line{
+     margin: 3%;
+ }
+ /* footer------------------------------- */
+ .footer{
+     /* border: 2px solid red; */
+     display: grid;
+     grid-template-columns: 35% 35% 30%;
+     justify-content: space-around;
+     margin-bottom: 5vh;
+ }
+ .f{
+ margin-left: 15%;
+ }
+ .social a{
+     text-decoration: none;
+     color: white;
+     margin-left: 10px;
+ }
+ #ftext{
+     /* border: 2px solid red; */
+     font-size: 17px;
+     width: 55%;
+     color: rgb(188, 186, 186);
+ }
+ 
+ #caps {
+     margin-top: 5vh;
+     margin-bottom: 5vh;
+     font-size: 24px;
+ }
+ /* copy---------------------------- */
+ #copy{
+     /* border: 2px solid red; */
+     padding: 10px;
+     margin-left: 5vw;
+     color: rgb(51, 50, 50);
+ }
+ 
+ /* ========== RESPONSIVE MEDIA QUERIES ========== */
+
+/* Large devices (1200px and up) - Default styles already cover this */
+
+/* Medium devices (992px to 1199px) */
+@media (max-width: 1199px) {
+    #title {
+        font-size: 8rem;
+    }
+    .bancont {
+        height: 100vh;
+    }
+    .spotbook {
+        font-size: 3.5rem;
+    }
+    .container-book {
+        width: 50%;
+    }
+    #big {
+        font-size: 2.2rem;
+    }
+    .digitalpay {
+        width: 80%;
+    }
+    #paybtn {
+        width: 35%;
+    }
+    .calorie-card {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+}
+
+/* Small devices (768px to 991px) - Tablet */
+@media (max-width: 991px) {
+    .header {
+        min-height: 20vh;
+    }
+    #since {
+        width: 20%;
+        transform: translateX(60vw);
+    }
+    #title {
+        font-size: 6rem;
+    }
+    .bancont {
+        height: 80vh;
+    }
+    .bancont nav a {
+        font-size: 22px;
+    }
+    .spotbook {
+        font-size: 3rem;
+    }
+    .container-book {
+        width: 70%;
+    }
+    .form {
+        max-width: 90%;
+    }
+    .datetime {
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+    }
+    .digitalpay {
+        width: 90%;
+        flex-wrap: wrap;
+        row-gap: 15px;
+    }
+    #paybtn {
+        width: 40%;
+    }
+    .calorie-card {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 40px;
+    }
+    .footer {
+        grid-template-columns: 1fr 1fr;
+    }
+    .social {
+        grid-column: span 2;
+    }
+}
+
+/* Extra small devices (575px to 767px) - Large mobile */
+@media (max-width: 767px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+    #since {
+        transform: none;
+        width: 40%;
+        margin: 20px auto;
+    }
+    #title {
+        font-size: 4.5rem;
+        text-align: center;
+    }
+    .title p {
+        text-align: center;
+    }
+    .bancont {
+        height: 60vh;
+    }
+    .bancont nav {
+        width: 90%;
+        left: 5%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .bancont nav a {
+        width: 100%;
+        text-align: center;
+        margin: 5px 0;
+    }
+    #bg {
+        width: 100%;
+    }
+    .spotbook {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .container-book {
+        width: 90%;
+        margin: 0 auto 30px;
+        text-align: center;
+    }
+    #paybtn {
+        width: 60%;
+        margin: 10% auto;
+    }
+    .btnbtn {
+        justify-content: center;
+    }
+    .digitalpay {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .calorie-card {
+        grid-template-columns: 1fr;
+    }
+    .footer {
+        grid-template-columns: 1fr;
+    }
+    .social {
+        grid-column: span 1;
+    }
+    #extra {
+        transform: none;
+        margin: 20px auto;
+    }
+}
+
+/* Small mobile devices (under 575px) */
+@media (max-width: 575px) {
+    #title {
+        font-size: 3.5rem;
+    }
+    #since {
+        width: 60%;
+        font-size: 16px;
+    }
+    .spotbook {
+        font-size: 2rem;
+    }
+    #big {
+        font-size: 1.8rem;
+    }
+    #small {
+        font-size: 1rem;
+    }
+    input {
+        padding: 15px;
+        font-size: 1rem;
+    }
+    .digitalpay label {
+        font-size: 1rem;
+    }
+    input[type="radio"] {
+        transform: scale(100%);
+    }
+    #paybtn {
+        width: 80%;
+        font-size: 1.1rem;
+    }
+    .calorie {
+        font-size: 3rem;
+    }
+    #caps {
+        font-size: 20px;
+    }
+}
+
+/* Orientation adjustments */
+@media (orientation: landscape) and (max-width: 991px) {
+    .bancont {
+        height: 120vh;
+    }
+    .calorie-card {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* High-density displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+    /* Optional: Add high-res assets if available */
+}
+ 
